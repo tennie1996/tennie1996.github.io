@@ -106,7 +106,7 @@ function activateLightMode(){
 <li>16 安装福昕PDF阅读器</li>
 </ul>
 <h2 id="01-设置root密码"><a href="#01-设置root密码" class="headerlink" title="01 设置root密码"></a>01 设置root密码</h2><p>使用命令：<code>$ sudo su</code>，然后执行<code>#passwd</code>,设置密码。</p>
-<p><a href="https://foochane.cn/images/2019/009.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://foochane.cn/images/2019/009.png" class="lazyload" title></a></p>
+<p><a href="https://foochane.cn/images/2019/009.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://foochane.cn/images/2019/009.png" class="lazyload"></a></p>
 <h2 id="02-更换国内源"><a href="#02-更换国内源" class="headerlink" title="02 更换国内源"></a>02 更换国内源</h2><h3 id="2-1-备份-etc-apt-sources-list"><a href="#2-1-备份-etc-apt-sources-list" class="headerlink" title="2.1 备份/etc/apt/sources.list"></a>2.1 备份/etc/apt/sources.list</h3><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bash</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br></pre></td></tr></table></figure></div>
 
 
@@ -125,7 +125,7 @@ function activateLightMode(){
 
 <h2 id="03-将电脑上的其他盘挂载ubuntu下"><a href="#03-将电脑上的其他盘挂载ubuntu下" class="headerlink" title="03 将电脑上的其他盘挂载ubuntu下"></a>03 将电脑上的其他盘挂载ubuntu下</h2><p>如果电脑上除了系统盘（安装linux的盘）以外还有其他盘，可以把其他盘挂载到linux系统的<code>/mnt/</code>目录下，方便命令访问。</p>
 <h3 id="3-1-查看磁盘"><a href="#3-1-查看磁盘" class="headerlink" title="3.1 查看磁盘"></a>3.1 查看磁盘</h3><p>命令:<code>sudo fdisk -l</code></p>
-<p><a href="https://foochane.cn/images/2019/010.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://foochane.cn/images/2019/010.png" class="lazyload" title></a></p>
+<p><a href="https://foochane.cn/images/2019/010.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://foochane.cn/images/2019/010.png" class="lazyload"></a></p>
 <p>所以，这里我们将<code>/dev/sda5</code>挂载到，<code>/mnt</code>下。</p>
 <h3 id="3-2-挂载"><a href="#3-2-挂载" class="headerlink" title="3.2 挂载"></a>3.2 挂载</h3><p>使用命令命令：<code>$ sudo mount /dev/sda5  /mnt</code><br>或者  <code>$  sudo mount -t ntfs /dev/sda5 /mnt -o iocharset=utf8,umask=0</code></p>
 <p>如果要取消挂载：<code>$ sudo umount /dev/sda5</code></p>
@@ -157,15 +157,15 @@ function activateLightMode(){
 <p>如果遇到问题，执行如下命令，再重新安装<br><code>$ sudo apt --fix-broken install</code></p>
 <h3 id="5-2-添加中文语言支持"><a href="#5-2-添加中文语言支持" class="headerlink" title="5.2 添加中文语言支持"></a>5.2 添加中文语言支持</h3><p>因为这里安装的是英文版的系统所以默认并没有安装中文的语言支持。</p>
 <p>在设置中找到<code>Region&amp;Language</code></p>
-<p><a href="https://foochane.cn/images/2019/011.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://foochane.cn/images/2019/011.png" class="lazyload" title></a></p>
+<p><a href="https://foochane.cn/images/2019/011.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://foochane.cn/images/2019/011.png" class="lazyload"></a></p>
 <p>点击 <code>Manage Install Languages</code></p>
 <p>安装中文包，选择fictx</p>
-<p><a href="https://foochane.cn/images/2019/012.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://foochane.cn/images/2019/012.png" class="lazyload" title></a></p>
+<p><a href="https://foochane.cn/images/2019/012.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://foochane.cn/images/2019/012.png" class="lazyload"></a></p>
 <p>安装后如下：</p>
-<p><a href="https://foochane.cn/images/2019/013.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://foochane.cn/images/2019/013.png" class="lazyload" title></a></p>
+<p><a href="https://foochane.cn/images/2019/013.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://foochane.cn/images/2019/013.png" class="lazyload"></a></p>
 <h3 id="5-3-切换搜狗输入法"><a href="#5-3-切换搜狗输入法" class="headerlink" title="5.3 切换搜狗输入法"></a>5.3 切换搜狗输入法</h3><p>ps：完成前面的步骤后先重启</p>
 <p>在以安装运用里，找到<code>Fcitx Configuration</code>，<code>添加Sougou Pinyin</code></p>
-<p><a href="https://foochane.cn/images/2019/014.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://foochane.cn/images/2019/014.png" class="lazyload" title></a><br>搜狗输入发就安装成功了。</p>
+<p><a href="https://foochane.cn/images/2019/014.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://foochane.cn/images/2019/014.png" class="lazyload"></a><br>搜狗输入发就安装成功了。</p>
 <p><strong>【备注】中英文的切换，可以使用<code>win+空格</code>或者<code>shift</code></strong></p>
 <h2 id="06-安装VMware-workstation"><a href="#06-安装VMware-workstation" class="headerlink" title="06 安装VMware-workstation"></a>06 安装VMware-workstation</h2><h3 id="6-1-下载安装包"><a href="#6-1-下载安装包" class="headerlink" title="6.1 下载安装包"></a>6.1 下载安装包</h3><p>下载地址：<a href="https://www.vmware.com/go/getWorkstation-linux" target="_blank" rel="noopener">https://www.vmware.com/go/getWorkstation-linux</a></p>
 <h3 id="6-2-安装"><a href="#6-2-安装" class="headerlink" title="6.2 安装"></a>6.2 安装</h3><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">bash</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt install build-essential  <span class="comment">#安装依赖包</span></span><br><span class="line">$ sudo ./VMware-Workstation-Full-15.0.4-12990004.x86_64.bundle</span><br></pre></td></tr></table></figure></div>
